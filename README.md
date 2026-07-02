@@ -3,25 +3,37 @@ Advanced Excel data analytics project focusing on FMCG supply chain, meat sales 
 # 🥩 Weather-Driven FMCG Supply Chain & Margin Analytics (Excel-Based)
 
 ## 📌 Project Overview
-This commercial-grade data analytics project explores the correlation between weather conditions (daily temperature fluctuations) and FMCG operations—specifically meat product sales volumes, inventory waste mitigation, cold chain logistics, and overall gross margin optimization. 
+This commercial-grade data analytics project explores the correlation between weather conditions (daily temperature fluctuations/extreme rain) and FMCG operations in **Gloucestershire, UK**. The project transitions raw operational data into actionable business insights to optimize inventory levels, eliminate waste, and protect financial margins during weather anomalies.
 
-The analysis transitions raw operational data into actionable business insights to streamline meat processing and distribution efficiency.
+The repository includes a complete **analytical Excel model**, an interactive **KPI Dashboard**, and a comprehensive **Business Case Report** detailing the methodology and strategic recommendations.
 
-## 📊 Key Analytical Areas Implemented in Excel:
-1. **Sales & Temperature Correlation:** Built analytical models to determine how sudden temperature shifts impact consumer demand across various meat categories (e.g., barbecue season spikes vs. winter stews demand changes).
-2. **Cold Chain Risk Management & Spoilage Analysis:** Developed automated tracking for storage and transit temperature thresholds. This helps minimize product waste (shrinkage) and ensures strict adherence to food safety standards (HACCP).
-3. **Dynamic Margins & Wastage Visualizations:** Designed executive-level Excel dashboards that display real-time impacts of cold chain failures on the company's financial margins.
-4. **Demand & Inventory Forecasting:** Created dynamic stock-ordering predictors using advanced statistical and logical lookups.
+## 📊 Key Business Insights & Analytical Framework (From the Report):
 
-## 🛠️ Advanced Excel Toolset & Data Techniques Demonstrated:
-- **Data Engineering:** Cleaned and formatted historical data, managed temperature anomalies, and merged sales registers with local weather records.
-- **Complex Logic & Lookups:** Utilized dynamic array functions and relational logic (`XLOOKUP`, `INDEX`/`MATCH`, `SUMIFS`, `AVERAGEIFS`) to aggregate cross-functional data.
-- **Data Modeling:** Designed robust **Pivot Tables & Pivot Charts** to break down volume trends by day, week, and product category.
-- **Executive Visualizations:** Applied clean, desaturated professional color palettes, **Conditional Formatting** for threshold heatmaps, and hidden technical elements to optimize corporate presentation.
+1. **Data Quality Assessment (DQA):** Audited and cleaned a historical dataset of 300 daily records (2023–2026) using **Power Query**, standardizing calendar tags, handling empty financial rows, and creating conditional attributes for *Extreme Heat* ($>30^\circ\text{C}$).
+2. **The "Ruined Weekend Effect" (Bank Holiday Analysis):** Quantified baseline financial losses from supply chain pre-allocation during extreme weather. 
+   * **Extreme Heat Bank Holiday:** Generates an average loss of **£1,258.00/day** in wasted meat stock.
+   * **Heavy Rain Bank Holiday:** Generates an average loss of **£1,124.80/day**.
+   * *Standard Sunny Weekends incur £0.00 in weather-related spoilage.*
+3. **Market Basket Shift (Mirror Effect):** Demonstrated that consumer demand during heatwaves shifts from meat to refreshments:
+   * Meat Demand (Beef & Pork): **-85%**
+   * Bagged Ice Demand: **+450%** | Ice Cream: **+310%** | Soft Drinks: **+240%**
+
+## 💰 Financial ROI & Predictive Sourcing Model
+Using a 4-day heatwave event case study, the predictive sourcing model demonstrates clear financial benefits for executive stakeholders:
+* **Traditional Sourcing (Blind Procurement):** Realized loss of **£5,032.00**.
+* **Smart Sourcing (Predictive Analytics):** Throttling meat orders by 85% based on a 3-day meteorological forecast slashes the risk to £754.80.
+* **Net Profit Saved:** 🎉 **£4,277.20** of margin protected via data-driven decisions.
+
+## 🛠️ Advanced Toolset & Techniques Demonstrated:
+* **Microsoft Excel & Power Query:** Data cleansing, handling null values, building relational logic (`XLOOKUP`, `INDEX/MATCH`, `SUMIFS`), and structuring Pivot Tables.
+* **Business Intelligence:** Designing interactive executive-level dashboards with KPI cards and slicers.
+* **Supply Chain Management:** Demand forecasting, Cold Chain risk management (HACCP), and inventory optimization.
 
 ## 📁 Repository Structure:
-- `Weather_Driven_FMCG_Supply_Chain_Analytics.xlsx` — The complete Excel analytical model including raw data sheets, calculation layers, and dynamic dashboards.
-- `README.md` — Project documentation and business context.
+* 📄 `Weather_Driven_FMCG_Supply_Chain_Analytics.xlsx` — Core analytical workbook (Data, calculations, and KPI dashboards).
+* 📄 `FMCG_Supply_Chain_Project_Report.docx` — Complete Executive Project Report detailing DQA, EDA, and business recommendations.
+* 📄 `README.md` — Project documentation.
 
 ---
-*Developed by: Vasyl Honcharuk* *Focus: Data Analytics | Supply Chain Logistics | FMCG Operations*
+*Developed by: Vasyl Honcharuk*  
+*Focus: Data Analytics | Supply Chain Logistics | FMCG Operations*
